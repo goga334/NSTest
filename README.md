@@ -8,10 +8,14 @@ An app which enables user to:
 - append library from .txt file
 
 <h1>How to install</h1>
+
 - clone repository
 - run "python main.py"
 
+
+
 <h1>What technologies were used</h1>
+
 - SQLite3
 - PyQt5 5.15.6
 - Qt Designer
