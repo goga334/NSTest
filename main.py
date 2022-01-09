@@ -42,6 +42,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         cur.execute(f"SELECT * FROM words WHERE word LIKE '%{search}%';")
         result = cur.fetchall()
         self.listWidget.clear()
+        self.label_3.setText(f"Found words: {len(result)}")
         for word_found in result:
             self.listWidget.addItem(word_found[0])
             if self.listWidget.count() > 9:
