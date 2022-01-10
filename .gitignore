@@ -7,8 +7,8 @@ __pycache__/
 *.so
 
 #venv stuff
-Include/
-Scripts/
+.Include/
+.Scripts/
 
 #Qt stuff
 design.ui
