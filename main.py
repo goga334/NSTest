@@ -10,8 +10,8 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         super().__init__()
         self.setupUi(self)  
         self.chooseFile.clicked.connect(self.browse_folder)
-        self.pushButton_2.clicked.connect(self.import_library)
-        self.pushButton_3.clicked.connect(self.append_library)  
+        self.pushButton_3.clicked.connect(self.import_library)
+        self.pushButton_2.clicked.connect(self.append_library)  
         self.lineEdit_2.textChanged.connect(self.find_words)
         self.addWord.clicked.connect(self.add_word)
 
