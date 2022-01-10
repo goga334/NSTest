@@ -16,24 +16,24 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.addWord.clicked.connect(self.add_word)
 
     def import_library(self):
+        cur.execute(f"DELETE FROM words;")
         try:
-            print(self.label_5.text())
             word_to_add = open(self.label_5.text())
-            cur.execute(f"DELETE FROM words;")
             for i in word_to_add:
                 cur.execute(f"INSERT INTO words VALUES('{i[:-1]}');")
                 conn.commit()
+            word_to_add.close()
         except:
             print("Could not open the library")
 
 
     def append_library(self):
         try:
-            print(self.label_5.text())
             word_to_add = open(self.label_5.text())
             for i in word_to_add:
                 cur.execute(f"INSERT INTO words VALUES('{i[:-1]}');")
                 conn.commit()
+            word_to_add.close()
         except:
             print("Could not open the library")
 
