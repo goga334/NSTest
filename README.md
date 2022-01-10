@@ -10,6 +10,7 @@ An app which enables user to:
 <h1>How to install</h1>
 
 - clone repository
+- install pyqt6 library (could be automated with docker-compose)
 - run "python main.py"
 
 
