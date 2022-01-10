@@ -4,12 +4,13 @@
 An app which enables user to:
 - search words in library by letters (also shows how many were found)
 - add words to the library
-- import library from .txt file
+- import library from .txt file (one word per line in the .txt file)
 - append library from .txt file
 
 <h1>How to install</h1>
 
 - clone repository
+- install pyqt6 library (could be automated with docker-compose)
 - run "python main.py"
 
 
@@ -17,5 +18,5 @@ An app which enables user to:
 <h1>What technologies were used</h1>
 
 - SQLite3
-- PyQt5 5.15.6
+- PyQt6
 - Qt Designer
