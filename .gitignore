@@ -11,7 +11,7 @@ __pycache__/
 .Scripts/
 
 #Qt stuff
-design.ui
+*.ui
 
 # Distribution / packaging
 .Python
