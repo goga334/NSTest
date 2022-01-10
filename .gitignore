@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+#venv stuff
+Include/
+Scripts/
+
+#Qt stuff
+design.ui
+
 # Distribution / packaging
 .Python
 build/
